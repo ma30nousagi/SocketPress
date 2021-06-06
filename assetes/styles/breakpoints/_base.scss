@@ -60,14 +60,14 @@ h3 {
     font-size: 1.6rem;
 }
 
-
 /* header */
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
 	height: 100px;
 	width: 100%;
+    background: #fff;
 	margin: 0 auto;
 	color:#fff;
 	display:-ms-flexbox;
@@ -77,38 +77,25 @@ header {
 	-webkit-justify-content: space-between;
 	justify-content:space-between;
 	align-items: center;
+    z-index: 999;
+    & >h1 {
+        margin: 0 0 0 50px;
+        & >a {
+            color: #000;
+        }
+    }
+    & >nav {
+        display: none;
+    }
+    & .openbtn {
+        display: block;
+    }
+    & .g-nav {
+        display: block;
+    }
 }
-header h1 {
-	margin: 0 0 0 50px;
-}
-header h1 a {
-	color: #000;
-}
-header ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 50px 0 0;
-}
-header ul li {
-	font-weight: bold;
 
-}
-header ul li a {
-	color: #333333;
-	text-decoration: none;
-	display: block;
-	position: relative;
-	width: 8em;
-	transition: .3s;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 3px;
-}
-header nav ul li a:hover {
-	color:#333;
-}
+
 
 
 /* footer */
@@ -141,10 +128,11 @@ header nav ul li a:hover {
 /* mainvisual */
 .mainvisual {
 	position: relative;
-	margin-bottom: 120px;
+	margin: 100px 0 120px 0;
 }
 .mainvisual img {
-	width: 100%;
+	width: auto;
+    height: 100vh;
 }
 .mainvisual h2 {
 	color: #333333;

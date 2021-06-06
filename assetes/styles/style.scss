@@ -19,6 +19,10 @@
   @import "breakpoints/600up";
 }
 
+@media (min-width: 769px) {
+  @import "breakpoints/769up";
+}
+
 @media (min-width: 960px) {
   @import "breakpoints/960up";
 }
