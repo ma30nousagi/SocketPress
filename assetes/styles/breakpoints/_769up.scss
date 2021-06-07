@@ -1,54 +1,97 @@
+/* header */
 .header {
-    & .openbtn {
-        display: none;
-    }
-    & .g-nav {
-        display: none;
+    & >h1 {
+        max-width: 50%;
+        margin: 0 0 0 50px;
     }
 }
 
-header ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 50px 0 0;
-}
-header ul li {
-	font-weight: bold;
 
-}
-header ul li a {
-	color: #333333;
-	text-decoration: none;
-	display: block;
-	position: relative;
-	width: 8em;
-	transition: .3s;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 3px;
-}
-header nav ul li a:hover {
-	color:#333;
+/* footer */
+.copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 50px;
+    text-align: center;
+    color: #ccc;
+    background-color: #333;
+    font-size: 12px;
+    letter-spacing: 0.05em;
 }
 
-.mainvisual img {
-	width: 100%;
-    height: auto;
+/* mainvisual */
+.mainvisual {
+    & >img {
+        width: 100%;
+        height: auto;
+    }
+    & >h2 {
+        color: #333333;
+	    z-index: 1;
+	    font-weight: bold;
+	    font-size: 2.25rem;
+	    text-align: center;
+	    margin: 0;
+	    letter-spacing: 0.06em;
+	    line-height: 1em;
+	    top: 50%;
+	    left: 50%;
+	    position: absolute;
+	    transform: translateY(-50%) translateX(-50%);
+	    width: 100%;
+    }
 }
-.mainvisual h2 {
-	color: #333333;
-	z-index: 1;
-	font-weight: bold;
-	font-size: 2.25rem;
-	text-align: center;
-	margin: 0;
-	letter-spacing: 0.06em;
-	line-height: 1em;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translateY(-50%) translateX(-50%);
-	width: 100%;
+
+
+/* top-greeting */
+.top-greeting {
+    & >dl {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & >dt {
+        width: 35%;
+        & >figure {
+            & >img {
+                width: 100%;
+            }
+        }
+    }
+    & >dd {
+        width: 60%;
+    }
 }
+
+/* top-business */
+
+/* top-news */
+.top-news {
+    & .news-archive {
+        & >li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            padding: 40px 0;
+            border-bottom: 1px solid #c2c2c2;
+            &:first-child {
+                border-top: 1px solid #c2c2c2;
+            }
+            & >time {
+                display: block;
+            }
+        }
+    }
+}
+
