@@ -16,7 +16,7 @@
 .openbtn {
   position: fixed;
   cursor: pointer;
-  top: 10px;
+  top: 20px;
   right: -20px;
   width: 100px;
   height: 50px;
@@ -536,12 +536,7 @@ h3 {
 }
 
 .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: block;
   padding: 15px 50px;
   text-align: center;
   color: #ccc;
@@ -550,7 +545,7 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-.copyright > a {
+.copyright a {
   color: #ccc;
 }
 
@@ -1227,6 +1222,24 @@ h3 {
   .header > h1 > a img {
     width: 40%;
   }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 50px;
+    text-align: center;
+    color: #ccc;
+    background-color: #333;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+  .top-greeting dt {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: 769px) {
@@ -1271,26 +1284,6 @@ h3 {
     width: 100%;
   }
   /* top-greeting */
-  .top-greeting > dl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .top-greeting > dt {
-    width: 35%;
-  }
-  .top-greeting > dt > figure > img {
-    width: 100%;
-  }
-  .top-greeting > dd {
-    width: 60%;
-  }
   /* top-business */
   /* top-news */
   .top-news .news-archive > li {
@@ -1308,6 +1301,7 @@ h3 {
   }
   .top-news .news-archive > li > time {
     display: block;
+    margin: 0 30px 0 0;
   }
 }
 
@@ -1357,6 +1351,26 @@ h3 {
   }
   .header ul > li a:hover {
     color: #333;
+  }
+  .top-greeting dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top-greeting dt {
+    width: 35%;
+  }
+  .top-greeting dt > figure > img {
+    width: 100%;
+  }
+  .top-greeting dd {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */

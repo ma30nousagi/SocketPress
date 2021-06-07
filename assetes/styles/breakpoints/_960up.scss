@@ -46,3 +46,27 @@
     }
 
 }
+
+
+.top-greeting {
+    & dl {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & dt {
+        width: 35%;
+        & >figure {
+            & >img {
+                width: 100%;
+            }
+        }
+    }
+    & dd {
+        width: 60%;
+    }
+}
