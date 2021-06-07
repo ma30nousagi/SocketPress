@@ -5,8 +5,11 @@
     align-items: center;
     vertical-align: bottom;
     & >h1 {
-        max-width: 100%;
-        margin: 0 0 0 50px;
+        & >a {
+            & img {
+                width: 50%;
+            }
+        }
     }
     & .openbtn {
         display: none;
